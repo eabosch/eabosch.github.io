@@ -1,0 +1,52 @@
+@charset "utf-8";
+.flex-container-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex-container-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.imageHover{
+    display:block;
+    position: relative;
+    overflow: hidden;
+    width: 97%;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+.imageHover:hover {
+    position: relative;
+    opacity: 0.6; 
+    transition: 0.3s;
+}
+.Image_Descrip{
+    position:absolute;
+    display: block;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    text-align: center;
+    visibility:hidden;
+    opacity:0;
+    color:white;
+    font-size: 2rem;
+    transition: opacity .2s, visibility .2s;
+    height:1%;
+}
+.imageHover:hover .Image_Descrip {
+    visibility: visible;
+    opacity: 1;
+    }
+.croppedTitleImage{
+    width: 20vw; 
+    height: 20vw; 
+    padding: 3%; 
+    object-fit: cover;
+}

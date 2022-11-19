@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en"><title>All Media</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3CssContent.css">
+<!--<video autoplay muted loop id="blueBGFullscreen"><source src="images/blueVHS.mp4"></video> -->
+<img id="blueBGFullscreen" src="images/bluebluegradient.png"></img>
+<img id="blueBGPortrait" src="images/bluebluegradientportrait.png"></img>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Orelega+One&display=swap" rel="stylesheet">
+<link href="fonts/SwedenSansRegular.css" rel="stylesheet">
+<link href="fonts/SwedenSansBold.css" rel="stylesheet">
+<link href="fonts/SwedenSansBook.css" rel="stylesheet">
+<link href="fonts/SwedenSansSemiBold.css" rel="stylesheet">
+
+<link rel="stylesheet" href="multimedia.css">
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-quarter img{cursor: pointer}
+</style>
+
+<body>
+    <div id="header">all media.</div>
+    <div id="body-body">
+        <div id="hamburger-menu">
+            <span class="inactive"></span>
+            <span class="inactive"></span>
+            <span class="inactive"></span>
+            <span class="inactive"></span>
+        </div>
+        <div id="link-column" class="inactive">
+            <a href="index.html"><div class="linkItem" id="top-link"><span>top</span></div></a>
+            <div class="linkItem" id="about-me-link"><span><a href="aboutMe.html">about me</a></span></div>
+            <div class="linkItem" id="multimedia-link" style="background-color: aliceblue; color: dodgerblue;"><span><a href='multimedia.html' id="multimedia-link-link">-> all media</a></span></div>
+            <div class="linkItem" id="design-link"><span><a href="design.html">design</a></span></div>
+            <div class="linkItem" id="illustration-link"><span><a href="illustration.html">illustration</a></span></div>
+            <div class="linkItem" id="writing-link"><span><a href="writing.html">interactive</a></span></div>
+        </div>
+        <div id="thumbnail-grid">
+            <!--<div class="thumbnail"><a href="abl/ablCommissions.html"><img class="thumbnailImage" width="220" height="315" src="images/portfolio-thumbs/rocket_abl.jpg"><span class="caption"><h1>ABL Space Systems</h1><p>3D and Illustration work done for ABL Space Systems.</p></span><span class="tagContainer"><span class="projectTag">design</span><span class="projectTag">illustration</span></span></a></div>-->
+            <div class="thumbnail"><a href="https://www.behance.net/gallery/157254621/Drawtober-2022-selected-works?"><img class="thumbnailImage" width="220" height="315" src="images/portfolio-thumbs/drawtober.jpg"><span class="caption"><h1>Drawtober <span style="font-family: 'Fira Code', monospace;">2022</span></h1><p>Select illustrations from 2022's Drawtober challenge.</p></span><span class="tagContainer"><span class="projectTag">illustration</span></a></div>
+            <div class="thumbnail"><img class="thumbnailImage" width="220" height="315" src="images/portfolio-thumbs/cnut.JPG"><img style="display: none;" src="images/fullscale-images/cnut-and-the-tide.JPG" alt="Cnut and The Tide"><span class="caption" id="modalcaption" onclick="modalMode(this)" alt="bluh"><h1 style="background-color: dodgerblue;">Cnut and the Tide</h1></span><span class="tagContainer"><span class="projectTag">illustration</span></span></div>
+            <div class="thumbnail"><a href="https://www.behance.net/gallery/157403241/3D-Menagerie"><img class="thumbnailImage" width="220" height="315" src="images/portfolio-thumbs/menagerie.png"><span class="caption"><h1 style="font-family: 'Fira Code', monospace;">3D Menagerie</h1><p>3D bits and bobs made for this website and others.</p></span><span class="tagContainer"><span class="projectTag">design</span><span class="projectTag">illustration</span></span></a></div>
+            <div class="thumbnail"><img class="thumbnailImage" width="220" height="315" src="images/portfolio-thumbs/captain-yajima.PNG"><img style="display: none;" src="images/fullscale-images/captain-yajima.PNG" alt="Captain Yajima"><span class="caption" onclick="modalMode(this)"><h1>Captain Yajima</h1><p></p></span><span class="tagContainer"><span class="projectTag">illustration</span></span></span></div>
+            <div class="thumbnail"><a href="https://www.behance.net/gallery/144880419/Birchbark"><img class="thumbnailImage" width="220" height="315" src="images/portfolio-thumbs/birchbark.PNG"><span class="caption"><h1 style="background-color: dodgerblue;">Birchbark</h1><p style="background-color: dodgerblue;">A vis dev project about camping and magic in Northern Ontario.</p></span><span class="tagContainer"><span class="projectTag">illustration</span></span></a></div>
+            <div class="thumbnail"><a href="https://www.behance.net/gallery/105665973/Vespers"><img class="thumbnailImage" width="220" height="315" src="images/portfolio-thumbs/vespers.png"><span class="caption"><h1>Vespers</h1><p>A game about the everyman and the Afterlife in Medieval Catholic Europe.</p></span><span class="tagContainer"><span class="projectTag">interactive</span></span></a></div>
+            <div class="thumbnail"><a href="https://www.behance.net/gallery/105786989/Idyll"><img class="thumbnailImage" width="220" height="315" src="images/portfolio-thumbs/idyll.png"><span class="caption"><h1 style="background-color: dodgerblue;">Idyll</h1><p style="background-color: dodgerblue; padding-bottom: 0;">A farming and friendship game for the UCLA Game Lab Fellowship.</p></span><span class="tagContainer"><span class="projectTag">interactive</span></span></a></div>
+            <div class="thumbnail"><a href="https://www.behance.net/gallery/157400259/Journeyman"><img class="thumbnailImage" width="220" height="315" src="images/portfolio-thumbs/book2.jpg"><span class="caption"><h1 style="background-color: dodgerblue;">Journeyman</h1><p style="background-color: dodgerblue; padding-bottom: 0;">An exploration of personal sustainability through typography and editorial design.</p></span><span class="tagContainer"><span class="projectTag">design</span></span></a></div>
+            <div class="thumbnail"><a href="https://www.behance.net/gallery/105788095/Folks"><img class="thumbnailImage" width="220" height="315" src="images/portfolio-thumbs/folks.jpg"><span class="caption"><h1 style="font-family: 'Fira Code', monospace;">Folks</h1><p>A web-based project about a family party. Navigate through the house with hyperlinks.</p></span><span class="tagContainer"><span class="projectTag">interactive</span></span></a></div>
+            <div class="thumbnail"><a href="https://www.behance.net/gallery/144874613/The-Laundromat"><img class="thumbnailImage" width="220" height="315" src="images/portfolio-thumbs/laundromat.png"><span class="caption"><h1>Laundromat</h1><p>A personal 3D illustration project.</p></span><span class="tagContainer"><span class="projectTag">illustration</span></a></div>
+            <div class="thumbnail"><a href="https://www.behance.net/gallery/105853797/Drawtober-2020"><img class="thumbnailImage" width="220" height="315" src="images/portfolio-thumbs/kate bush.PNG"><span class="caption"><h1>Drawtober <span style="font-family: 'Fira Code', monospace;">2020</span></h1><p>Select illustrations from 2020's Drawtober challenge.</p></span><span class="tagContainer"><span class="projectTag">illustration</span></span></a></div>
+            <div class="thumbnail"><a href="https://www.behance.net/gallery/157273869/Space-Time-Witch"><img class="thumbnailImage" width="220" height="315" src="images/portfolio-thumbs/time-witch.PNG"><span class="caption"><h1>Time Witch</h1><p>A low-poly 3D character made for Sketchfab's Witch Contest.</p></span><span class="tagContainer"><span class="projectTag">illustration</span></span></a></div>
+            <div class="thumbnail"><a href="https://www.behance.net/gallery/157257649/Geek-Week-2018"><img class="thumbnailImage" width="220" height="315" src="images/portfolio-thumbs/GeekWeekWayfinding.png"><span class="caption"><h1 style="background-color: dodgerblue;">Geek Week</h1><p style="background-color: dodgerblue;">Branding and assets created for UCLA's Geek Week.</p></span><span class="tagContainer"><span class="projectTag">design</span></span></a></div>
+            <div class="thumbnail"><a href="https://www.behance.net/gallery/157407851/Board-Games-%282015-2019%29"><img class="thumbnailImage" width="220" height="315" src="images/portfolio-thumbs/Hive-Jive.JPG"><span class="caption"><h1>Board Games</h1><p>A master page of all the board games I've created.</p></span><span class="tagContainer"><span class="projectTag">interactive</span></span></a></div>
+            <div class="thumbnail"><a href="https://www.behance.net/gallery/157406643/Double-Major-Branding-%282017-2019%29"><img class="thumbnailImage" width="220" height="315" src="images/portfolio-thumbs/doubleMajorBranding.jpg"><span class="caption"><h1 style="background-color: dodgerblue;">Double Major Branding</h1><p style="background-color: dodgerblue;">Design work for Double Major's internal publications and company branding.</p></span><span class="tagContainer"><span class="projectTag">design</span></span></a></div>
+            <div class="thumbnail"><a href="https://www.behance.net/gallery/105789257/God-Generator"><img class="thumbnailImage" width="220" height="315" src="images/portfolio-thumbs/godGenerator-screenshot.png"><span class="caption"><h1>God Generator</h1><p>An interactive toy about nature and spiritualism.</p></span><span class="tagContainer"><span class="projectTag">interactive</span></span></a></div>
+            <div class="thumbnail"><a href="https://www.behance.net/gallery/157402235/Warp-Strike-%282019%29"><img class="thumbnailImage" width="220" height="315" src="images/portfolio-thumbs/warpStrike.jpeg"><span class="caption"><h1>Warp Strike</h1><p>A capstone project in which I developed a series of action figures and accomponying lore and branding.</p></span><span class="tagContainer"><span class="projectTag">design</span><span class="projectTag">illustration</span><span class="projectTag">interactive</span></span></a></div>
+            <div class="thumbnail"><img class="thumbnailImage" width="220" height="315" src="images/portfolio-thumbs/tedX.png"><span class="caption"><h1 style="background-color: dodgerblue;">TEDx</h1><p style="background-color: dodgerblue;">Branding done for Tedx talks at UCLA.</p></span><span class="tagContainer"><span class="projectTag">design</span></span></div>
+            <div class="thumbnail"><a href="https://www.behance.net/gallery/157405379/UCLA-Animations"><img class="thumbnailImage" width="220" height="315" src="images/portfolio-thumbs/nowhiring_gif.gif"><span class="caption"><h1 style="background-color: dodgerblue;">UCLA Animations</h1><p style="background-color: dodgerblue;">A collection of animations created for UCLA Housing and UCLA Events.</p></span><span class="tagContainer"><span class="projectTag">design</span><span class="projectTag">illustration</span></span></a></div>
+            <div class="thumbnail"><img class="thumbnailImage" width="220" height="315" src="images/portfolio-thumbs/infographic.jpg"><span class="caption"><h1 style="background-color: dodgerblue;"><span style="font-family: 'Fira Code', monospace;">18</span>th Street</h1><p style="background-color: dodgerblue;">A collection of design work done for 18th Street Arts Center in 2017.</p></span></div>
+        </div>
+    </div>
+    <!-- MODAL -->
+    <div id="modal01" class="modalDiv" style="padding-top:0" onclick="this.style.display='none'">
+        <span class="xButton w3-button w3-black w3-xlarge w3-display-topright">×</span>
+          <div class="zoombox w3-animate-zoom">
+            <img id="img01" class="modalImage">
+            <p id="alt-text-caption"></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var linkButton = this.id;
+        var thumbnails= document.getElementsByClassName("thumbnail");
+        const hamburger = document.querySelector("#hamburger-menu");
+        const navMenu = document.querySelector("#link-column");
+        const navMargin = document.querySelector(".sec_about");
+        const onClick = document.querySelectorAll(".linkItem");
+
+        document.querySelector('#hamburger-menu').addEventListener('click', 
+        () => { 
+            document.querySelector('#link-column').classList.toggle('active');
+            hamburger.classList.toggle("active");
+        }
+        );
+
+        
+
+        function delay (URL) {
+            setTimeout( function() { window.location = URL }, 700 );
+        }
+
+        function modalMode(element) {
+        var siblingImage = element.previousElementSibling;
+        document.getElementById("img01").src = siblingImage.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("alt-text-caption");
+        captionText.innerHTML = siblingImage.alt;
+        }
+        
+    </script>
+</body>
+</html>

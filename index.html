@@ -1,16 +1,146 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="title1">
-        <a href="" style="text-decoration: none;">hej.</a>
-        <div id="gnomeImage">
-            <img src="images/gnome.png" id="gnome" alt="gnome">
-        </div>
+<!doctype html>
+<html lang="en">
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3CssContent.css">
+<!--<video autoplay muted loop id="blueBGFullscreen"><source src="images/blueVHS.mp4"></video> -->
+<img id="blueBGFullscreen" src="images/bluebluegradient.png"></img>
+<img id="blueBGPortrait" src="images/bluebluegradientportrait.png"></img>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Orelega+One&display=swap" rel="stylesheet">
+<link href="fonts/SwedenSansRegular.css" rel="stylesheet">
+<link href="fonts/SwedenSansBold.css" rel="stylesheet">
+<link href="fonts/SwedenSansBook.css" rel="stylesheet">
+<link href="fonts/SwedenSansSemiBold.css" rel="stylesheet">
+
+<link rel="stylesheet" href="landingPage_2.css">
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-quarter img{cursor: pointer}
+</style>
+<body class="w3-light-grey">
+
+<!-- !PAGE CONTENT DISPLAY SIZE! -->
+<div class="w3-main w3-content" style="max-width:1920px;width:100%;margin-top:0px;background-color: aquamarine;">
+  <!-- bg image <img id="background-image" src="images/8.png"> -->
+  
+  <!-- index columns -->
+  <div id="index-uber-grid">
+    <div id="index-header-grid">
+      <span class="lp-header"><img id="titleimage" src="images/text_title-name.png"></span>
     </div>
+    <div id="index-mid-grid">
+      <div id="index-footer-grid">
+        <span class="column-contents">
+          <div class="dont-break-please" onmouseover="secondGif(event)" onclick="secondGif(event)" onmouseout="firstsGif(event)">
+            <h1 class="index-index-header" id="aboutme_header"><a href="javascript:delay('aboutMe.html')">a. about me</a></h1>
+          </div>
+          <div class="dont-break-please" onmouseover="secondGif(event)" onclick="secondGif(event)" onmouseout="firstsGif(event)">
+            <h1 class="index-index-header" id="multimedia_header"><a href="javascript:delay('multimedia.html')">b. all &shy;media</a></h1>
+          </div>
+          <div class="dont-break-please" onmouseover="secondGif(event)" onmouseout="firstsGif(event)">
+            <h1 class="index-index-header" id="design_header"><a href="javascript:delay('design.html')">c. design</a></h1>
+          </div>
+          <div class="dont-break-please" onmouseover="secondGif(event)" onmouseout="firstsGif(event)">
+            <h1 class="index-index-header" id="illustration_header"><a href="javascript:delay('illustration.html')">d. ill&shy;us&shy;tration</a></h1>
+          </div>
+          <div class="dont-break-please" onmouseover="secondGif(event)" onmouseout="firstsGif(event)">
+            <h1 class="index-index-header" id="writing_header"><a href="javascript:delay('writing.html')">e. wri&shy;ting</a></h1>
+          </div>
+          
+        </span> 
+      </div>
+      <div id=section-icons>
+      <div class="mid-grid-temp" id="aboutme-area"><div class="sectionDescription" id="about-me-description"><img src="images/text_about-me.png"></div><div class="sectionDescription-touch" id="about-me-description-touch"><img src="images/text_about-me2.png"></div><div class="imagediv" id="about-me-image-link"><a href="javascript:delay('aboutMe.html')" class="grid-button"><div class="touch-sectionTitle" id="sectionTitle_about-me"><p>> about me</p></div><img class="image-button" id="aboutme_image" src="images/aboutme_image1.gif" onmouseover="secondGif(event)" onmouseout="firstGif(event)"></a></div></div>
+      <div class="mid-grid-temp" id="multimedia-area"><div class="sectionDescription" id="multimedia-description"><img src="images/text_multimedia.png"></div><div class="sectionDescription-touch" id="multimedia-description-touch"><img src="images/text_multimedia2.png"></div><div class="imagediv" id="multimedia-image-link"><a href="javascript:delay('multimedia.html')" class="grid-button"><div class="touch-sectionTitle" id="sectionTitle_multimedia"><p>> multimedia</p></div><img class="image-button" id="multimedia_image" src="images/multimedia_image1.gif" onmouseover="secondGif(event)" onmouseout="firstGif(event)"></a></div></div>
+      <div class="mid-grid-temp" id="design-area"><div class="sectionDescription" id="design-description"><img src="images/text_design.png"></div><div class="sectionDescription-touch" id="design-description-touch"><img src="images/text_desgn2.png"></div><div class="imagediv" id="design-image-link"><a href="javascript:delay('design.html')" class="grid-button"><div class="touch-sectionTitle" id="sectionTitle_design"><p>> design</p></div><img class="image-button" id="design_image"src="images/design_image1.gif" onmouseover="secondGif(event)" onmouseout="firstGif(event)"></a></div></div>
+      <div class="mid-grid-temp" id="illustration-area"><div class="sectionDescription" id="illustration-description"><img src="images/text_illustration.png"></div><div class="sectionDescription-touch" id="illustration-description-touch"><img src="images/text_illustration2.png"></div><div class="imagediv" id="illustration-image-link"><a href="javascript:delay('illustration.html')" class="grid-button"><div class="touch-sectionTitle" id="sectionTitle_illustration"><p>> illustration</p></div><img class="image-button" id="illustration_image" src="images/illustration_image1.gif" onmouseover="secondGif(event)" onmouseout="firstGif(event)"></a></div></div>
+      <div class="mid-grid-temp" id="writing-area"><div class="sectionDescription" id="writing-description"><img src="images/text_writing.png"></div><div class="sectionDescription-touch" id="writing-description-touch"><img src="images/text_writing2.png"></div><div class="imagediv" id="writing-image-link"><a href="javascript:delay('writing.html')" class="grid-button"><div class="touch-sectionTitle" id="sectionTitle_writing"><p>> writing</p></div><img class="image-button" id="writing_image" src="images/writing_image1.gif"onmouseover="secondGif(event)" onmouseout="firstGif(event)"></a></div></div>
+      
+      </div>
+
+
+    </div>
+
+    
+  </div>
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open()
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+<script>
+  document.createElement("link-image");
+  var currentLinkImage;
+  var linkImageID;
+  var linkBodyClass;
+
+  $("h1.index-index-header")
+  .mouseover(function(){
+    currentLinkImage=this.id.replace("header","image");
+    console.log("#"+currentLinkImage);
+    linkImageID=document.getElementById(currentLinkImage);
+    console.log(linkImageID.id);
+    linkImageID.src="images/"+linkImageID.id+2+".gif";
+    if(".index-index-header"){
+    linkImageID.scrollIntoView({behavior: 'smooth', block: 'center'}, true);
+  }
+  }
+  )
+  .mouseout(function(){
+    linkImageID.src="images/"+linkImageID.id+1+".gif";
+  }
+  )
+  .click(function(){
+    currentLinkImage=this.id.replace("header","image");
+    linkImageID=document.getElementById(currentLinkImage);
+    linkImageID.src="images/"+linkImageID.id+2+".gif";
+    if(".index-index-header"){
+    linkImageID.scrollIntoView({behavior: 'smooth', block: 'center'}, true);
+    }
+  })
+ function delay(URL){
+  setTimeout(function() { window.location = URL }, 2000);
+ }
+ 
+
+  function secondGif(event){
+    if(".image-button"){
+    event.target.src="images/"+event.target.id+2+".gif";
+    //event.target.scrollIntoView({behavior: 'smooth'}, true);
+  }
+  }
+  function firstGif(event){
+    if(".image-button"){
+    event.target.src="images/"+event.target.id+1+".gif";
+    }
+  }
+  function delay (URL) {
+    setTimeout( function() { window.location = URL }, 5500 );
+  }
+</script>
+
 
 </body>
 </html>

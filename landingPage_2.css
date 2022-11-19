@@ -1,0 +1,1094 @@
+@charset "utf-8";
+body, html{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+.frame-top-image{
+    position:fixed;
+    width: 100vw;
+    margin: 0;
+}
+
+#blueBGFullscreen{
+    position:fixed;
+    display: block;
+    left: 0;
+    margin: 0;
+    width: 100vw;
+    min-height: 70vh;
+    height: 100vh;
+    background-size: auto;
+}
+#blueBGPortrait{
+    display: none;
+}
+
+/*
+.frame-left-image{
+    position: fixed;
+    width:4.5%;
+    top: 10%;
+}
+#background-image{
+    position:fixed;
+    width: 100%;
+    display: none;
+}
+@font-face {
+    font-family: 'alagardmedium';
+    src: url('alagard-webfont.woff2') format('woff2'),
+         url('alagard-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.storyText{
+    margin-left: 30px;
+    font-family: 'DotGothic16', sans-serif;
+    font-weight: normal;
+    color:limegreen;
+}
+.text-option-link{
+    font-family: 'DotGothic16', sans-serif;
+    font-weight: normal;
+    color:limegreen;
+}*/
+
+/* top | right | bottom | left */
+#index-uber-grid{
+    display: block;
+    padding: 0px 0px 0px 0px;
+    margin: 0 auto auto auto;
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    background-color:none;
+
+}
+/* HEADER */
+
+#index-header-grid{
+    display: block;
+    width: 100%;
+    height: 10vh;
+    background-color: none;
+}
+.lp-header{
+    font-size: 10vh;
+    font-family: 'SwedenSans';
+    font-weight: bold;
+    mix-blend-mode: hard-light;
+    opacity: 0.9;
+}
+#titleimage{
+    display: block;
+    position:relative;
+    height: 15.5vh;
+    width: auto;
+    margin: 2vh 2.5vw 0vh;
+}
+.lp-subheader{
+    float: right;
+    justify-content: right;
+    margin-top: 2%;
+    margin-right: 2%;
+}
+.subheader-element{
+    text-align: right;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left:auto;
+    font-family: 'Noto Sans', sans-serif;
+}
+#name{
+    font-family: 'SwedenSans', sans-serif;
+    font-weight: bold;
+    font-size: 4vh;
+    line-height: 1em;
+}
+
+/* CENTER CONTENT */
+#index-mid-grid{
+    display: block;
+    position: fixed;
+    margin-left: 2.75vw;
+    margin-top: 3.5vh;
+    width:90vw;
+    height:79vh;
+    float: left;
+    border: solid 7px aliceblue;
+    border-radius: 8px;
+}
+#section-icons{
+    width:72vw;
+    height:100%;
+    position: absolute;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    top:0;
+    right:0.5vw;
+}
+::-webkit-scrollbar{
+    display: block;
+    background:transparent;
+    margin-top: 30px;
+    
+}
+::-webkit-scrollbar-track {
+    background:transparent;
+    height:0.25vh;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 1vh; 
+}
+
+::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 1vh;
+}
+::-webkit-scrollbar-thumb {
+    background: white;
+    opacity: 0.4;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-button:vertical:start{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/7e/Chevron-up.svg');  
+    background-size: contain;
+    position: absolute;
+    display: none;
+    
+}
+::-webkit-scrollbar-button:vertical:end{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ee/Chevron-down.svg');
+    background-size: contain;   
+    display: none;
+}
+.mid-grid-temp{
+    display: block;
+    width: 100%;
+    height:100vh;
+    margin-top:0;
+}
+.touch-sectionTitle{
+    display:none;
+}
+#multimedia-area{
+    position: relative;
+    width:100%;
+    margin:0;
+    margin-top:0;
+    padding:0;
+}
+#multimedia_image{
+    position: relative;
+    width:auto;
+    height: 48vh;
+    padding: 0;
+    top:0;
+    margin: 30% 18%;
+}
+#design-area{
+    position: relative;
+    width:100%;
+    margin:0;
+    margin-top:0;
+    padding:0;
+}
+#design_image{
+    position: relative;
+    width:auto;
+    height: 45vh;
+    padding: 0;
+    top:0;
+    margin: 30% 10%;
+    
+}
+#illustration-area{
+    position: relative;
+    width:100%;
+    margin:0;
+    margin-top:0;
+    padding:0;
+}
+#writing-area{
+    position: relative;
+    width:100%;
+    margin:0;
+    margin-top:0;
+    padding:0;
+}
+#aboutme-area{
+    /*background-color:rgb(248, 176, 42);*/
+    position: relative;
+    width:100%;
+    margin:0;
+    margin-top:0;
+    padding:0;
+}
+#aboutme_image{
+    position: relative;
+    width:auto;
+    height: 42vh;
+    padding: 0;
+    top:0;
+    margin: 30% 18%;
+    
+}
+.imagediv{
+    position:relative;
+    width:35vw;
+    margin-right:0;
+    margin-left:auto;
+    height:100%
+
+}
+.sectionDescription{
+    margin-right:auto;
+    margin-left: 5vw;
+    position: absolute;
+
+    width:30vw;
+    height: fit-content;
+    padding-bottom: 2vh;
+    top:30%;
+    bottom: 30%;
+}
+.sectionDescription img{
+    width:30vw;
+    height:auto;
+}
+.sectionDescription-touch{
+    display: none;
+}
+.sectionDescription p{
+    align-content: left;
+    margin-left: 1vw;
+    font-family: 'SwedenSans', sans-serif;
+    font-size: 3vh;
+    color:white;
+    padding: 0;
+    margin-bottom:0;
+    line-height: 3vh;
+}
+.sectionDescription span{
+    align-content: left;
+    margin-left: 1.5vw;
+    color: white;
+    
+}
+#illustration_image{
+    position: relative;
+    width:auto;
+    height: 45vh;
+    padding: 0;
+    top:0;
+    margin: 30% 18%;
+}
+#writing_image{
+    position: relative;
+    width:auto;
+    height: 45vh;
+    padding: 0;
+    top:0;
+    margin: 30% 18%;
+}
+
+
+/* FOOTER LINKS */
+
+#index-footer-grid{
+    display: block;
+    color: aliceblue;
+    opacity: 0.9;
+    height: 72.5vh;
+    width: 15vw;
+    margin: 1vw;
+    background-color: none;
+    
+    overflow: hidden;
+}
+.column-contents{
+    margin: 10px 1%;
+    display: block;
+
+    break-inside: auto;
+}
+.index-index-header{
+    font-family: 'SwedenSans', sans-serif;
+    font-size:4vh;
+    font-weight: bold;
+
+    padding:0 0 0 1em;
+    margin-top:0;
+    margin-bottom:0;
+    display:inline-block;
+    
+    break-after: avoid;
+
+    transition-duration: .15s;
+}
+.index-index-header a{
+    text-decoration: none;
+}
+.dont-break-please:hover .index-index-header{
+    font-size: 5vh;
+    padding:0 0 0 -1em;
+    cursor: pointer;
+    text-decoration:underline;
+    color:rgb(255, 212, 38);
+    transition-duration: .15s;
+}
+.dont-break-please:hover .index-index-body{
+    display: inline-block;
+    transition-duration: .5s;
+}
+
+.index-index-body{
+    display:none;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 2.5vh;
+    padding: 0 0 0 1.5em;
+    margin-top: 0;
+    margin-bottom: 0;
+    hyphens: manual;
+    width:100%;
+    break-inside: auto;
+}
+#design-block{
+    display: inline-block;
+}
+/* LANDSCAPE - galaxy fold*/
+@media only screen and (max-width:654px){
+
+    #writing-area{
+        height: 88%;
+    }
+}
+/* PORTRAIT - iphone SE*/
+@media only screen and (orientation: portrait) and (max-width:668px){
+    #index-mid-grid{
+        overflow-x: hide;
+    }
+    .touch-sectionTitle{
+        display: block;
+        position: absolute;
+        width:100%;
+        margin: 5vh 5vw 0vh -4vw;
+        padding: 0vh;
+
+        font-family: 'Fira Code', monospace;
+        text-align: center;
+        font-size: 3vh;
+        color: goldenrod;
+        line-height: 1vh;
+        
+    }
+    #titleimage{
+        margin: 2vh 4vw 0vh;
+    }
+    .image-button{
+        margin: 0 0 0 0;
+    }
+    #blueBGFullscreen{
+        display: none;
+    }
+    #blueBGPortrait{
+        position:fixed;
+        display: block;
+        left: 0;
+        margin: 0;
+        width: 100vw;
+        min-height: 70vh;
+        height: 100vh;
+        background-size: auto;
+    }
+    #sectionTitle_illustration{
+        margin: 10vh 5vw 0vh -1vw;
+    }
+    .sectionDescription{
+        display:none;
+    }
+    .sectionDescription-touch{
+        margin: 60% 5% 50%;
+        position: absolute;
+        display:block;
+        width:90%;
+        height: fit-content;
+        top:30%;
+        bottom: 30%;
+    }
+    .sectionDescription-touch img{
+        height: 15vh;
+        width: auto;
+    }
+    #section-icons{
+        width: 100%;
+    }
+    #titleimage{
+        height: 10vh;
+        margin-bottom: 0;
+    }
+    #index-uber-grid{
+        padding-top: 0;
+    }
+    #index-mid-grid{
+        margin-top:-1.5vh;
+        height:87vh;
+        margin-left:5%;
+        margin-right:0%;
+        
+    }
+    #index-footer-grid{
+        display:none;
+    }
+    .imagediv{
+        width:100%;
+        margin-top: 0;
+    }
+    #aboutme_image{
+        width:60vw;
+        height:auto;
+        margin: 22vh 13% 55%;
+        
+    }
+    #aboutme-area{
+        margin: 0 0 0 0;
+    }
+    #about-me-description-touch{
+        margin: 37vh 0vw 0 4vh;
+    }
+    #multimedia_image{
+        width:60vw;
+        height:auto;
+        margin: 14vh 13% 55%;
+    }
+    #multimedia-description-touch{
+        margin: 32vh 0vw 0 5vh;
+    }
+    #design_image{
+        width:60vw;
+        height:auto;
+        margin: 15vh 13% 10vh;
+    }
+    #design-description-touch{
+        margin: 25vh 0vw 0 5vh;
+    }
+    #writing_image{
+        width:60vw;
+        height:auto;
+        margin: 12vh 13% 5vh;
+    }
+    #writing-area{
+        height: 88%;
+    }
+    #writing-image-link{
+        margin: 0 0 0 0;
+        padding: 0;
+        height: 70vh;
+    }
+    #writing-description-touch{
+        margin: 26vh 0vw 0 5vh;
+
+    }
+    #illustration_image{
+        width:60vw;
+        height:auto;
+        margin: 20vh 13% 5vh;
+    }
+    #illustration-description-touch{
+        margin: 26vh 0vw 0 5vh;
+
+    }
+
+}
+
+/* LANDSCAPE - galaxy s8 - iphone 12 pro - pixel 5 - iphone xR - samsung galaxy a51/71 - samsung galaxy s20 ultra */
+@media only screen and (orientation: portrait) and (max-width:1023px) and (min-width: 740px){
+    #titleimage{
+        margin: 2vh 4vw 0vh;
+    }
+    #blueBGFullscreen{
+        display: none;
+    }
+    #blueBGPortrait{
+        position:fixed;
+        display: block;
+        left: 0;
+        margin: 0;
+        width: 100vw;
+        min-height: 70vh;
+        height: 100vh;
+        background-size: auto;
+    }
+    .touch-sectionTitle{
+        display: block;
+        position: absolute;
+        width:100%;
+        margin: 5vh 5vw 5vh -4vw;
+        padding: 0vh;
+
+        font-family: 'Fira Code', monospace;
+        text-align: center;
+        font-size: 3vh;
+        color: goldenrod;
+        line-height: 1vh;
+        
+
+    }
+    #sectionTitle_illustration{
+        margin: 2vh 5vw 0vh -1vw;
+    }
+    .sectionDescription{
+        display:none;
+    }
+    .sectionDescription-touch{
+        margin: 35vh 0vw 19% 20vw;
+        position: absolute;
+        display:block;
+        width:50vw;
+        height: fit-content;
+        padding: 0 0 0 0;
+        top: 26vh;
+        bottom: 30%;
+    }
+    .sectionDescription-touch img{
+        height: 17vh;
+        width: auto;
+    }
+    #multimedia-description-touch{
+        margin: 42vh 0vw 19% 20vw;
+    }
+    #section-icons{
+        width: 100%;
+    }
+    #titleimage{
+        height: 10vh;
+        margin-bottom: 0;
+    }
+    #index-uber-grid{
+        padding-top: 0;
+    }
+    #index-mid-grid{
+        margin-top:-1.5vh;
+        height:87vh;
+        margin-left:5%;
+        margin-right:5%;
+    }
+    #index-footer-grid{
+        display:none;
+    }
+    .imagediv{
+        width:100%;
+        margin-top: 0;
+    }
+    .mid-grid-temp{
+        margin: 0;
+    }
+    #aboutme_image{
+        width:60vw;
+        height:auto;
+        margin: 13vh 13% 33vh;
+    }
+    #about-me-description-touch{
+        margin: 37vh 0vw 19% 20vw;
+    }
+    #multimedia_image{
+        width:60vw;
+        height:auto;
+        margin: 11vh 13%;
+    }
+    #design_image{
+        width:60vw;
+        height:auto;
+        margin: 12vh 13%;
+    }
+    #design-description-touch{
+        margin: 30vh 0vw 19% 20vw;
+    }
+    #writing_image{
+        width:60vw;
+        height:auto;
+        margin: 12vh 13vw;
+    }
+    #writing-description-touch{
+        margin: 30vh 0vw 0 15vh;
+    }
+    #writing-area{
+        padding-bottom: 0%;
+        margin: 0 0 0 0;
+        height: 88%;
+    }
+    #illustration_image{
+        width:60vw;
+        height:auto;
+        margin: 12vh 13%;
+    }
+    #illustration-description-touch{
+        margin: 30vh 0vw 19% 20vw;
+    }
+
+
+}
+/* LANDSCAPE - nest hub - ipad mini - ipad air - nest hub max - surface pro 7*/
+@media only screen and (orientation: portrait) and (max-width:1369px) and (min-width:1024){
+    body{
+    
+        background-color: yellow;
+    }
+    #blueBGFullscreen{
+        display: none;
+    }
+}
+/* LANDSCAPE - surface duo*/
+@media only screen and (max-width:721px) and (min-width:375px){ 
+body{
+    
+    background-color: pink;
+}
+#blueBGFullscreen{
+    display: none;
+}
+}
+@media only screen and (width:540px){
+    #blueBGFullscreen{
+        display: none;
+    }
+    #blueBGPortrait{
+        position:fixed;
+        display: block;
+        left: 0;
+        margin: 0;
+        width: 100vw;
+        min-height: 70vh;
+        height: 100vh;
+        background-size: auto;
+    }
+    .touch-sectionTitle{
+        display: block;
+        position: absolute;
+        width:100%;
+        margin: 5vh 5vw 5vh -4vw;
+        padding: 0vh;
+
+        font-family: 'Fira Code', monospace;
+        text-align: center;
+        font-size: 3vh;
+        color: goldenrod;
+        line-height: 1vh;
+        
+
+    }
+    #sectionTitle_illustration{
+        margin: 2vh 5vw 0vh -1vw;
+    }
+    .sectionDescription{
+        display:none;
+    }
+    .sectionDescription-touch{
+        margin: 35vh 0vw 19% 20vw;
+        position: absolute;
+        display:block;
+        width:50vw;
+        height: fit-content;
+        padding: 0 0 0 0;
+        top: 26vh;
+        bottom: 30%;
+    }
+    .sectionDescription-touch img{
+        height: 17vh;
+        width: auto;
+    }
+    #multimedia-description-touch{
+        margin: 42vh 0vw 19% 20vw;
+    }
+    #section-icons{
+        width: 100%;
+    }
+    #titleimage{
+        height: 10vh;
+        margin-bottom: 0;
+    }
+    #index-uber-grid{
+        padding-top: 0;
+    }
+    #index-mid-grid{
+        margin-top:-1.5vh;
+        height:87vh;
+        margin-left:5%;
+        margin-right:5%;
+    }
+    #index-footer-grid{
+        display:none;
+    }
+    .imagediv{
+        width:100%;
+        margin-top: 0;
+    }
+    .mid-grid-temp{
+        margin: 0;
+    }
+    #aboutme_image{
+        width:50vw;
+        height:auto;
+        margin: 14vh 20% 30vh;
+    }
+    #about-me-description-touch{
+        margin: 33vh 0vw 17% 20vw;
+    }
+    #multimedia_image{
+        width:56vw;
+        height:auto;
+        margin: 5vh 13% 2vh;
+    }
+    #sectionTitle_multimedia{
+        margin: 2vh 5vw 2vh -4vw 
+    }
+    #multimedia-description-touch{
+        margin: 32vh 0vw 19% 20vw;
+    }
+    #design_image{
+        width:60vw;
+        height:auto;
+        margin: 6vh 13% 12vh;
+    }
+    #sectionTitle_design{
+        margin: 2vh 5vw 1vh -4vw 
+    }
+    #design-description-touch{
+        margin: 30vh 0vw 19% 20vw;
+    }
+    #writing_image{
+        width:60vw;
+        height:auto;
+        margin: 12vh 13vw;
+    }
+    #writing-description-touch{
+        margin: 30vh 0vw 20vh 20vw;
+    }
+    #writing-area{
+        padding-bottom: 0%;
+        margin: 0 0 0 0;
+        height: 95%;
+    }
+    #illustration_image{
+        width:60vw;
+        height:auto;
+        margin: 12vh 13%;
+    }
+    #illustration-description-touch{
+        margin: 30vh 0vw 32% 20vw;
+    }
+}
+@media only screen and (orientation: portrait) and (min-width:374px) and (max-width: 395px){
+    #blueBGFullscreen{
+        display: none;
+    }
+    #blueBGPortrait{
+        position:fixed;
+        display: block;
+        left: 0;
+        margin: 0;
+        width: 100vw;
+        min-height: 70vh;
+        height: 100vh;
+        background-size: auto;
+    }
+    #about-me-description-touch{
+        margin: 32vh 0vw 19% 15vw;
+    }
+    #multimedia-description-touch{
+        margin: 32vh 0vw 19% 15vw;
+    }
+    #design-description-touch{
+        margin: 28vh 0vw 19% 15vw;
+    }
+    #writing-description-touch{
+        margin: 27vh 0vw 19% 15vw;
+    }
+    #illustration-description-touch{
+        margin: 28vh 0vw 19% 15vw;
+    }
+}
+
+@media only screen and (orientation: portrait){
+    
+}
+
+
+/*LANDSCAPE STARTS HERE*/
+@media only screen and (orientation: landscape){
+    #index-mid-grid{
+        display: block;
+        position: fixed;
+        margin-left: 2.75vw;
+        margin-top: 3.5vh;
+        width:95vw;
+        height:79vh;
+        float: left;
+        border: solid 7px aliceblue;
+        border-radius: 8px;
+    }
+    #blueBGPortrait{
+        display: none;
+    }
+    #blueBGFullscreen{
+        position:fixed;
+        display: block;
+        left: 0;
+        margin: 0;
+        width: 100vw;
+        min-height: 70vh;
+        height: 100vh;
+        background-size: auto;
+    }
+    .mid-grid-temp{
+        display: block;
+        width: 100%;
+        height:100vh;
+        margin-top:0;
+    }
+    .touch-sectionTitle{
+        display:none;
+    }
+    .mid-grid-temp{
+        position: relative;
+        width:100%;
+        margin:0;
+        margin-top:0;
+        padding:0;
+    }
+    .imagediv{
+        position:relative;
+        width:35vw;
+        margin-right:0;
+        margin-left:auto;
+        height:100%;
+
+    }
+    .image-button{
+        position: relative;
+        width:auto;
+        height: 80vh;
+        padding: 0;
+        margin: 30vh 30vw;
+    }
+    #aboutme_image, #multimedia_image, #design_image, #writing_image, #illustration_image{
+        height: 60vh;
+        margin: 10vh 6vw;
+    }
+    
+    .sectionDescription{
+        margin-right:auto;
+        margin-left: 5vw;
+        position: absolute;
+
+        width:30vw;
+        height: fit-content;
+        padding-bottom: 2vh;
+        top:30%;
+        bottom: 30%;
+    }
+    .sectionDescription img{
+        width:30vw;
+        height:auto;
+    }
+    .sectionDescription-touch{
+        display: none;
+    }
+    .sectionDescription p{
+        align-content: left;
+        margin-left: 1vw;
+        font-family: 'SwedenSans', sans-serif;
+        font-size: 3vh;
+        color:white;
+        padding: 0;
+        margin-bottom:0;
+        line-height: 3vh;
+    }
+    .sectionDescription span{
+        align-content: left;
+        margin-left: 1.5vw;
+        color: white;
+        
+    }
+    #writing-area{
+        height: 95%;
+    }
+
+    /* FOOTER LINKS */
+
+    #index-footer-grid{
+        display: block;
+        color: aliceblue;
+        opacity: 0.9;
+        height: 72.5vh;
+        width: 15vw;
+        margin: 1vw;
+        background-color: none;
+        
+        overflow: hidden;
+    }
+    .column-contents{
+        margin: 10px 1%;
+        display: block;
+
+        break-inside: auto;
+    }
+    .index-index-header{
+        font-family: 'SwedenSans', sans-serif;
+        font-size:3vh;
+        font-weight: bold;
+
+        padding:0 0 0 1em;
+        margin-top:0;
+        margin-bottom:0;
+        display:inline-block;
+        
+        break-after: avoid;
+
+        transition-duration: .15s;
+    }
+    .index-index-header a{
+        text-decoration: none;
+        transition-duration: .15s;
+    }
+    .dont-break-please:hover .index-index-header{
+        font-size: 5vh;
+        padding:0 0 0 -1em;
+        cursor: pointer;
+        text-decoration:underline;
+        color:rgb(255, 212, 38);
+        transition-duration: .15s;
+    }
+    .dont-break-please:hover .index-index-body{
+        display: inline-block;
+        transition-duration: .5s;
+    }
+
+    .index-index-body{
+        display:none;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 2.5vh;
+        padding: 0 0 0 1.5em;
+        margin-top: 0;
+        margin-bottom: 0;
+        hyphens: manual;
+        width:100%;
+        break-inside: auto;
+    }
+    #design-block{
+        display: inline-block;
+    }
+}
+@media only screen and (orientation: landscape) and (min-width: 1080px){
+    /* FOOTER LINKS */
+
+    #index-footer-grid{
+        display: block;
+        color: aliceblue;
+        opacity: 0.9;
+        height: 72.5vh;
+        width: 15vw;
+        margin: 1vw;
+        background-color: none;
+        
+        overflow: hidden;
+    }
+    .index-index-header{
+        font-family: 'SwedenSans', sans-serif;
+        font-size:4vh;
+        font-weight: bold;
+
+        padding:0 0 0 1em;
+        margin-top:0;
+        margin-bottom:0;
+        display:inline-block;
+        
+        break-after: avoid;
+    }
+    .index-index-header a{
+        text-decoration: none;
+    }
+    .dont-break-please:hover .index-index-header{
+        font-size: 5vh;
+        padding:0 0 0 -1em;
+        cursor: pointer;
+        text-decoration:underline;
+        color:rgb(255, 212, 38);
+        transition-duration: .15s;
+    }
+    .index-index-body{
+        display:none;
+    }
+    
+    .image-button{
+        position: relative;
+        width:auto;
+        height: 80vh;
+        padding: 0;
+        margin: 30vh 30vw;
+    }
+    #aboutme_image, #multimedia_image, #design_image, #writing_image, #illustration_image{
+        height: 45vh;
+        margin: 12vh 4vw;
+    }
+}
+@media only screen and (orientation: landscape) and (min-width: 1025px) and (min-height: 750px){
+    .image-button{
+        position: relative;
+        width:auto;
+        height: 80vh;
+        padding: 0;
+        margin: 30vh 30vw;
+    }
+    #aboutme_image, #multimedia_image, #design_image, #writing_image, #illustration_image{
+        height: 45vh;
+        margin: 12vh 2vw;
+    }
+}
+
+
+@media only screen and (orientation: landscape) and (min-width: 650px) and (max-width: 1079px){
+    .image-button{
+        position: relative;
+        width:auto;
+        height: 80vh;
+        padding: 0;
+        margin: 30vh 30vw;
+    }
+    #aboutme_image, #multimedia_image, #design_image, #writing_image, #illustration_image{
+        height: 55vh;
+        margin: 12vh 5vw;
+    }
+}
+
+/*SURFACE DUO*/
+@media only screen and (orientation: landscape) and (min-width: 700px) and (max-width:721px) and (min-height: 500px){
+    .image-button{
+        position: relative;
+        width:auto;
+        height: 20vh;
+        padding: 0;
+        margin: 12vh 2vw;
+    }
+    #aboutme_image, #multimedia_image, #design_image, #writing_image, #illustration_image{
+        height: 42vh;
+        margin: 12vh 2vw;
+    }
+}
+@media only screen and (orientation: landscape) and (min-width: 1023px) and (max-width: 1024px){
+    .image-button{
+        position: relative;
+        width:auto;
+        height: 50vh;
+        padding: 0;
+        margin: 15vh 15vw;
+    }
+    #aboutme_image, #multimedia_image, #design_image, #writing_image, #illustration_image{
+        height: 46vh;
+        margin: 12vh 1vw;
+    }
+}

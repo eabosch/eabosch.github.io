@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<title>Multimedia</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body, html{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .body-ody{
+        width: 100%;
+        height: 100%;
+        background-color: coral;
+    }
+    .thumbnail
+    {
+        background-color:chartreuse;
+        width: 30%;
+        height: 27vw;
+        margin: 2% 2% 2% 3%;
+        border-radius: 5px;
+        float: left;
+        overflow: hidden;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: relative;
+    }
+    .w3-modal{
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        height: 100%;
+        width: 100%;
+        z-index: 5000;
+    }
+    
+    .caption{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 1000;
+        padding: 5%;
+        font-family: 'Fira Code', monospace;
+        font-size:6vh;
+        color: aliceblue;
+        opacity: 0;
+        transition:all 300ms ease-in-out;
+        -webkit-transition:all 300ms ease-in-out;
+        -moz-transition:all 300ms ease-in-out;
+        -o-transition:all 300ms ease-in-out;
+        -ms-transition:all 300ms ease-in-out;
+    }
+    .caption h1{
+        font-family: 'Fira Code', monospace;
+        font-size:4vh;
+        color: aliceblue;
+    }
+</style>
+<body>
+    <div class="body-ody">
+        <div class="thumbnail"><span class="caption"><h1 style="background-color: dodgerblue;">Cnut and the Tide</h1></span><img class="thumbnailImage" onclick="onClick(this)" width="220" height="315" onclick="onClick(this)" src="images/portfolio-thumbs/cnut.JPG" alt="Cnut and The Tide"><span class="caption"><h1 style="background-color: dodgerblue;">Cnut and the Tide</h1></span><span class="tagContainer"><span class="projectTag">illustration</span></span></div>
+    </div>
+    <!-- MODAL -->
+    <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+        <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+          <img id="img01" class="w3-image">
+          <p id="caption"></p>
+        </div>
+      </div>
+    
+
+<script>
+        function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+        }
+</script>   
+</body>
+</html>
