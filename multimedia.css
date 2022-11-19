@@ -865,7 +865,7 @@ body, html{
     }
     #link-column div{
         font-family: 'Fira Code', monospace;
-        font-size:3vh;
+        font-size:2.8vh;
         margin: 0;
         display: block;
         background-color: dodgerblue;
@@ -904,13 +904,13 @@ body, html{
     }
     #thumbnail-grid{
         width: 96%;
-        height: 87%;
+        height: 87vh;
         border-radius: 5px;
         background-color: none;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
 
-        margin: 12vh 2% 0 2%;
+        margin: 12vh 2% 12vh 2%;
         overflow-y: scroll;
         align-items: center;
         border: solid aliceblue 5px;
