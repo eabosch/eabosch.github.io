@@ -214,7 +214,7 @@ body, html{
         width: 25vw;
         align-content: left;
         position: absolute;
-        z-index: 1000;
+        z-index: 10000;
       }
       #link-column a{
           text-decoration: none;
@@ -230,6 +230,7 @@ body, html{
         visibility: visible;
         
         transition: visibility 0.3s linear;
+        z-index: 10000;
         
     }
     #link-column div{
@@ -242,6 +243,7 @@ body, html{
         text-align: left;
         padding-left: 2vw;
         margin: auto 6vw 1vh auto;
+        z-index: 10000;
         
     }
     #link-column #top-link{
@@ -286,6 +288,7 @@ body, html{
         overflow-y: scroll;
         align-items: center;
         border: aliceblue solid 5px;
+        z-index: 5;
 
     }
     .thumbnail{
@@ -301,6 +304,7 @@ body, html{
         justify-content: center;
         cursor: pointer;
         position: relative;
+        z-index: 6;
     }
     .thumbnail img{
         min-width: 100%;
@@ -313,7 +317,7 @@ body, html{
         position: absolute;
         height: 100%;
         width: 100%;
-        z-index: 1000;
+        z-index: 7;
         padding: 5%;
         font-family: 'Fira Code', monospace;
         font-size:6vh;
@@ -688,6 +692,7 @@ body, html{
     .caption:hover{
         opacity: 1;
         background-color: #3b41487e;
+        z-index:2;
     }
 }
 @media screen and (orientation: landscape) and (min-width:1020px){
