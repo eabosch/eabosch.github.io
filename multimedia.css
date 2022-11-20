@@ -277,7 +277,7 @@ body, html{
     #thumbnail-grid{
         transform: translate(10vw, 0px);
         width: 88vw;
-        height: 80vh;
+        height: 70vh;
         margin-top: 17vh;
         background-color: none;
         display: grid;
