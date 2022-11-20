@@ -904,7 +904,7 @@ body, html{
     }
     #thumbnail-grid{
         width: 96%;
-        height: 87vh;
+        height: 82vh;
         border-radius: 5px;
         background-color: none;
         display: grid;
@@ -1084,7 +1084,7 @@ body, html{
         margin: 4.5% 0vw auto 3%;
     }
     #thumbnail-grid{
-        height: 84.5%;
+        height: 80%;
         width: 96%;
         margin: 12.78vh 2% 0% 2%;
         border: solid aliceblue 10px;
