@@ -343,7 +343,7 @@ body, html{
 }
 .dont-break-please:hover .index-index-body{
     display: inline-block;
-    transition-duration: .5s;
+    transition-duration: .15s;
 }
 
 .index-index-body{
@@ -965,7 +965,7 @@ body{
     }
     .dont-break-please:hover .index-index-body{
         display: inline-block;
-        transition-duration: .5s;
+        transition-duration: .15s;
     }
 
     .index-index-body{
@@ -1018,7 +1018,7 @@ body{
         cursor: pointer;
         text-decoration:underline;
         color:rgb(255, 212, 38);
-        transition-duration: .15s;
+        transition-duration: .05s;
     }
     .index-index-body{
         display:none;
