@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <title>Resume</title>
+    <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="w3CssContent.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Orelega+One&display=swap" rel="stylesheet">
+    <link href="fonts/SwedenSansRegular.css" rel="stylesheet">
+    <link href="fonts/SwedenSansBold.css" rel="stylesheet">
+    <link href="fonts/SwedenSansBook.css" rel="stylesheet">
+    <link href="fonts/SwedenSansSemiBold.css" rel="stylesheet">
+    <link rel="stylesheet" href="resume.css">
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="portfolioScript.js"></script>
+
+    </head>
+    <body>
+        <div id="gridContainer">
+            <div class="TopThird">
+                <a class="backButton" href="illustration.html"><b>☜</b></a>
+                <div class="pageLogo"></div>
+                <div class="pageTitle">ᚐResumeᚐ</div>
+                <a class="nextButton" href="interactive.html"><b>☞</b></a>
+            </div>
+            <div class="pixel-art-container">
+                <svg id="pixelArt-BorderLeft" viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0" y="0" width="15" height="150" fill="aliceblue"/>
+                </svg>
+                <svg id="pixelArt-paperCorner" viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="75" y="0" width="10" height="1" fill="aliceblue"/>
+                    <rect x="76" y="1" width="9" height="1" fill="aliceblue"/>
+                    <rect x="77" y="2" width="8" height="1" fill="aliceblue"/>
+                    <rect x="78" y="3" width="7" height="1" fill="aliceblue"/>
+                    <rect x="79" y="4" width="6" height="1" fill="aliceblue"/>
+                    <rect x="80" y="5" width="5" height="1" fill="aliceblue"/>
+                    <rect x="81" y="6" width="4" height="1" fill="aliceblue"/>
+                    <rect x="82" y="7" width="3" height="1" fill="aliceblue"/>
+                    <rect x="83" y="8" width="2" height="1" fill="aliceblue"/>
+                    <rect x="84" y="9" width="1" height="1" fill="aliceblue"/>
+                    <rect x="74" y="1" width="1" height="10" fill="aliceblue"/>
+                    <rect x="75" y="2" width="1" height="9" fill="aliceblue"/>
+                    <rect x="76" y="3" width="1" height="8" fill="aliceblue"/>
+                    <rect x="77" y="4" width="1" height="7" fill="aliceblue"/>
+                    <rect x="78" y="5" width="1" height="6" fill="aliceblue"/>
+                    <rect x="79" y="6" width="1" height="5" fill="aliceblue"/>
+                    <rect x="80" y="7" width="1" height="4" fill="aliceblue"/>
+                    <rect x="81" y="8" width="1" height="3" fill="aliceblue"/>
+                    <rect x="82" y="9" width="1" height="2" fill="aliceblue"/>
+                    <rect x="83" y="10" width="1" height="1" fill="aliceblue"/>
+                    <rect x="0" y="-1" width="100" height="1" fill="aliceblue"/>
+                    <!--CORNER BIT-->
+                    <rect x="73" y="0" width="1" height="1" fill="#162CBC"/>
+                    <rect x="74" y="0" width="1" height="1" fill="#162CBC"/>
+                    <rect x="75" y="1" width="1" height="1" fill="#162CBC"/>
+                    <rect x="76" y="2" width="1" height="1" fill="#162CBC"/>
+                    <rect x="77" y="3" width="1" height="1" fill="#162CBC"/>
+                    <rect x="78" y="4" width="1" height="1" fill="#162CBC"/>
+                    <rect x="79" y="5" width="1" height="1" fill="#162CBC"/>
+                    <rect x="80" y="6" width="1" height="1" fill="#162CBC"/>
+                    <rect x="81" y="7" width="1" height="1" fill="#162CBC"/>
+                    <rect x="82" y="8" width="1" height="1" fill="#162CBC"/>
+                    <rect x="83" y="9" width="1" height="1" fill="#162CBC"/>
+                    <rect x="73" y="1" width="1" height="11" fill="#162CBC"/>
+                    <rect x="74" y="11" width="10" height="1" fill="#162CBC"/>
+                    <rect x="84" y="10" width="1" height="1" fill="#162CBC"/>
+                    <rect x="84" y="11" width="1" height="1" fill="#162CBC"/>
+                </svg>
+                <svg id="pixelArt-BorderRight" viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="85" y="0" width="15" height="150" fill="aliceblue"/>
+                </svg>
+                <div id="resumeContents">
+                    <a id="downloadLink" href="images/resume-Esther Abosch-062024.docx" download><h4 id="resume-download">Download Resume</h4></h4></a>
+                    <div class="header">
+                        <h2>Experience</h2>
+                        <div class="divider"></div>
+                    </div>
+                    <div id="jobListings">
+                        <div class="jobGroup">
+                            <h3>Game Designer</h3>
+                            <p class="employer">Pipeworks Game Studios</p>
+                            <p class="dates">Oct 2019 - Apr 2021 | Jan 2024 - now</p>
+                            <ul>
+                                <li><div class="li-container">Acted as lead game designer on Serious Games projects for the department of defense.</div></li>
+                                <li><div class="li-container">Created and maintained design documentation and style guides and managed project goals using Confluence.</div></li>
+                                <li><div class="li-container">Managed projects and delegated software development tasks with JIRA.</div></li>
+                                <li><div class="li-container">Designed and developed levels and in-game assets using a combination of JSON, Python, Textpad, and internal tools.</div></li>
+                                <li><div class="li-container">Wrote in-game tutorials and branching narratives using Ink.</div></li>
+                            </ul>
+                        </div>
+                        <div class="jobGroup">
+                            <h3>Digital Content Producer</h3>
+                            <p class="employer">New_ Public</p>
+                            <p class="dates">Jun 2023 - Jan 2024</p>
+                            <ul>
+                                <li><div class="li-container">Orchestrated end-to-end video production for social media content.</div></li>
+                                <li><div class="li-container">Transcribed and maintained New_ Public’s expanding video library.</div></li>
+                                <li><div class="li-container">Crafted compelling graphics to enhance New_ Public’s digital presence, ensuring brand consistency.</div></li>
+                                <li><div class="li-container">Co-hosted and coordinated social media content for online events.</div></li>
+                                <li><div class="li-container">Contributed to the organization’s newsletter, showcasing impactful initiatives.</div></li>
+                            </ul>
+                        </div>
+                        <div class="jobGroup">
+                            <h3>Design Lead</h3>
+                            <p class="employer">Double Major Studio</p>
+                            <p class="dates">Feb 2017 - Aug 2019</p>
+                            <ul>
+                                <li><div class="li-container">Delivered promotional material for UCLA events.</div></li>
+                                <li><div class="li-container">Created design standards for various events.</div></li>
+                                <li><div class="li-container">Tracked progress on design tasks and event activations.</div></li>
+                            </ul>
+                        </div>
+                        <div class="jobGroup">
+                            <h3>Game Design Teaching Assistant</h3>
+                            <p class="employer">UCLA Game Lab</p>
+                            <p class="dates">Jun 2019 - Aug 2019</p>
+                            <ul>
+                                <li><div class="li-container">Conducted classes in animation, illustration, and interaction using Unity Game Engine.</div></li>
+                                <li><div class="li-container">Conducted classes in animation, illustration, and interaction using Unity Game Engine.</div></li>
+                                <li><div class="li-container">Assisted in organizing a gallery showing of student work.</div></li>
+                            </ul>
+                        </div>
+                        <div class="jobGroup">
+                            <h3>Assistant Language Teacher</h3>
+                            <p class="employer">JET Programme</p>
+                            <p class="dates">Sep 2021 - Aug 2022</p>
+                            <ul>
+                                <li><div class="li-container">Developed English language curricula for Elementary School grade levels 3-6 and led classes in Japanese and English.</div></li>
+                                <li><div class="li-container">Created educational games and activities for increased engagement with course content.</div></li>
+                                <li><div class="li-container">Attained N3 level Japanese qualification in the JLPT exam.</div></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header">
+                        <h2>Awards</h2>
+                        <div class="divider"></div>
+                    </div>
+                    <div class="award">1st Place Game</div>
+                    <p class="awardedByGroup">Pipeworks Game Jam (2024)</p>
+                    <div class="award">N3 Japanese Language Proficiency</div>
+                    <p class="awardedByGroup">Japanese Language Proficiency Test (2022)</p>
+                    <div class="award">1st Place Poster Design</div>
+                    <p class="awardedByGroup">ACUHO-I Marketing Awards (2018)</p>
+                    <div class="award">Silver Award</div>
+                    <p class="awardedByGroup">National Latin Examination (2012)</p>
+                    
+                    <div class="header">
+                        <h2>Education</h2>
+                        <div class="divider"></div>
+                    </div>
+                    <div id="education-body">
+                        <h3>University of California, Los Angeles</h3>
+                        <p id="year">|2015-2019|</p>
+                        <p id="education-description">Graduated Magna Cum Laude with a BA in Design Media Arts and a Minor in Asian Languages.</p>
+                        <span style="font-weight:bold;">GPA 3.89</span>
+                    </div>
+    
+                    <div class="header">
+                        <h2>Additional Skills</h2>
+                        <div class="divider"></div>
+                    </div>
+                    <ul id="skills-list">
+                        <li>
+                            <div class="li-container">
+                            <span style="font-weight: bold;">Front End Web Dev</span>
+                            <p>HTML, CSS, Javascript</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-container">
+                            <span style="font-weight: bold;">Illustration and Graphic Design</span>
+                            <p>Adobe Creative Suite, Procreate, Blender</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-container">
+                            <span style="font-weight: bold;">Game Design and Development</span>
+                            <p>JSON, Unity, Unreal, C#, Ink, Twine</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-container">
+                            <span style="font-weight: bold;">Project Managment</span>
+                            <p>Jira, Excel, Confluence</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-container">
+                            <span style="font-weight: bold;">3D Modeling and Animation</span>
+                            <p>Unity, Blender, Substance Painter and Designer, ZBrush, Marvelous Designer</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <svg id="pixelArt-paper" viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="15" y="0" width="1" height="151" fill="#162CBC"/>
+                    <rect x="84" y="10" width="1" height="141" fill="#162CBC"/>
+                    <rect x="15" y="0" width="60" height="1" fill="#162CBC"/>
+
+                    <!--CORNER BIT-->
+                    <rect x="75" y="1" width="1" height="1" fill="#162CBC"/>
+                    <rect x="76" y="2" width="1" height="1" fill="#162CBC"/>
+                    <rect x="77" y="3" width="1" height="1" fill="#162CBC"/>
+                    <rect x="78" y="4" width="1" height="1" fill="#162CBC"/>
+                    <rect x="79" y="5" width="1" height="1" fill="#162CBC"/>
+                    <rect x="80" y="6" width="1" height="1" fill="#162CBC"/>
+                    <rect x="81" y="7" width="1" height="1" fill="#162CBC"/>
+                    <rect x="82" y="8" width="1" height="1" fill="#162CBC"/>
+                    <rect x="83" y="9" width="1" height="1" fill="#162CBC"/>
+                    <rect x="73" y="1" width="1" height="11" fill="#162CBC"/>
+                    <rect x="74" y="11" width="10" height="1" fill="#162CBC"/>
+                </svg>
+            </div>
+            <div class="BottomThird">
+                <a class="homeButton" href="index.html"><b>Home</b></a>
+            </div>
+            
+        </div>
+        
+        <!--<script src="portfolioPageScript.js" defer></script>-->
+        
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        
+    </body>
+</html>
