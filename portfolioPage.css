@@ -1,0 +1,487 @@
+@charset "utf-8";
+
+@font-face{
+    font-family: 'Trickster_Regular';
+    src:    url('fonts/Trickster-master/webfonts/Trickster-Regular.eot');
+    src:    url('fonts/Trickster-master/fontTrickster-Regular.eot?#iefix') format('embedded-opentype'),
+            url('fonts/Trickster-master/webfonts/Trickster-Regular.woff') format('woff'),
+            url('fonts/Trickster-master/webfonts/Trickster-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+html,body{
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    padding: 0;
+    margin:0;
+    /*background-color:#1f1457;*/
+    background-color: aliceblue;
+    overflow: hidden;
+    font-family: 'Noto Sans', sans-serif;
+    display: block;
+}
+
+.flickity-viewport{
+    height:100%;
+}
+
+/* PORTRAIT */
+@media screen and (orientation: portrait) {
+    
+    #gridContainer {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .TopThird {
+        flex:0 0 15%;
+        display: flex;
+        align-items: center;
+        height: 15%;
+        width: 100%;
+        padding: 0 6vw 0 6vw;
+    }
+    
+    .backButton{
+        justify-self: left;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 7vw;
+       /*color: #d69aea;*/
+       color:#162CBC;
+
+        font-size: 5vh;
+        font-family: "Noto Sans", sans-serif;
+        font-weight: 200;
+        text-decoration: none;
+
+    }
+
+    .nextButton{
+        justify-self: right;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 7vw;
+        /*color: #d69aea;*/
+        color:#162CBC;
+
+        font-size: 5vh;
+        font-family: "Noto Sans", sans-serif;
+        font-weight: 200;
+        text-decoration: none;
+
+    }
+
+    .pageTitle{
+        font-size: 5.5vh;
+        justify-self: center;
+        top:0;
+        padding:0 4vw 0 5vw;
+        font-family: "Trickster_Regular", sans-serif;
+        font-weight: 700;
+        /*color: #d69aea;*/
+        color:#162CBC;
+    }
+    
+    .MidThird {
+        flex:0 0 70%;
+        display: flex;
+        justify-content: left;
+        
+        align-items: top;
+        flex-direction: row;
+        height: 60%;
+        width: 100%;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+    }
+    .imageTitle{
+        position: absolute;
+        font-size: 2vh;
+        z-index: 5;
+        width: 500px;
+        height: 100px;
+        bottom: 10px;
+        left: 0;
+        align-self: center;
+        margin: auto;
+        color: aliceblue;
+        font-family: "Fira Code", monospace;
+    }
+    
+    .galleryCards{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .MidThird::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .carousel-cell{
+        height: 93%;
+        width: 70vw;
+        margin: 2% 2% 2% 2%;
+        overflow: hidden;
+        background-color: cornflowerblue;
+        padding: none;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    
+        display: flex;
+        /*border: 2px solid #d69aea;*/
+        border:2px solid #162CBC;
+        border-radius: 10px;
+    
+    }
+    
+    .carousel-cell img{
+        height: 100%;
+    
+        object-fit: contain;
+    
+    }
+
+    .flickity-viewport{
+        height:100%;
+    }
+    
+    .flickity-page-dots {
+        bottom: 0px;
+        padding: 5px;
+      }
+      /* white circles */
+      .flickity-page-dots .dot {
+        width: 12px;
+        height: 12px;
+        opacity: 1;
+        background: transparent;
+        border: 2px solid #162CBC;
+      }
+      /* fill-in selected dot */
+      .flickity-page-dots .dot.is-selected {
+        color: #d69aea;
+        background-color: #162CBC;
+      }
+    
+      #overlayContent{
+        position: fixed; 
+        width: 100vw;
+        top: 20vh;
+    
+        text-align: center;
+        align-self: center;
+    
+        display: flex;
+        flex-direction: column;
+        font-family: "Fira Code", monospace;
+    
+        overflow: hidden;
+        z-index: 100;
+    }
+    
+    #overlayContent img{
+        width: 94%;
+        align-self: center;
+    }
+    
+    #overlay{
+        position: fixed; 
+        width: 100vw; 
+        height: 100vh; 
+        top: 0px; 
+        left: 0px; 
+        background-color: #000; 
+        opacity: 0.7;
+        filter: alpha(opacity = 70) !important;
+        display: none;
+        z-index: 100;
+    
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    
+        
+    }
+    
+    #caption{
+        display: none;
+        text-align: center;
+        z-index: 100;
+        font-size: 2vh;
+        font-family: "Fira Code", monospace;
+        color:aliceblue;
+    }
+    
+    
+    .BottomThird {
+        flex:1 0 0%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 33%;
+        width: 100%;
+    }
+    
+    .pageButton{
+        flex: 0 0 35vw;
+        display: flex;
+        width: 35vw;
+        height: 3vh;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 2vw;
+        margin: 2vw;
+        font-family: "Fira Code", monospace;
+        border: 2px solid #162CBC;
+        border-radius: 6px;
+        color: #162CBC;
+        text-decoration: none;
+        font-size: 2vh;
+        font-weight: 100;
+    }
+}
+
+/* LANDSCAPE */
+@media screen and (orientation: landscape) {
+    html,body{
+        width: 100%;
+        height: auto;
+        min-height: 100%;
+        padding: 0;
+        margin:0;
+        background-color: aliceblue;
+        overflow: hidden;
+        font-family: 'Noto Sans', sans-serif;
+    }
+    #gridContainer {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .TopThird {
+        flex:0 0 15%;
+        display: flex;
+        align-items: center;
+        height: 15%;
+        width: 100%;
+    }
+    
+    .backButton{
+        position:absolute;
+        right: 28vw;
+        font-size: 12vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color:#162CBC;
+        font-family: 'Noto Sans', sans-serif;
+        text-decoration: none;
+    }
+
+    .nextButton{
+        position: absolute;
+        right: 4vw;
+        font-size: 12vh;
+        color:#162CBC;
+        text-decoration: none;
+        font-family: 'Noto Sans', sans-serif;
+        margin: 0 0 0 0;
+    }
+    
+    .MidThird {
+        flex:0 0 70%;
+        display: flex;
+        justify-content: left;
+        align-items: top;
+        flex-direction: row;
+        height: 78%;
+        width: 100%;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 3%;
+    }
+    
+    .galleryCards{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .MidThird::-webkit-scrollbar{
+        display: none;
+    }
+    
+    .carousel-cell{
+        height: 85%;
+        width: 30vw;
+        margin: 2% 2% 2% 2%;
+        overflow: hidden;
+        background-color: cornflowerblue;
+        padding: none;
+        border-radius: 6px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        position: relative;
+    
+        border: 2px solid #162CBC;
+    
+    }
+    
+    .carousel-cell img{
+        object-fit: cover;
+        z-index: 2;
+        width: 225%;
+    }
+
+    .imageTitle{
+        position: absolute;
+        font-size: 7vh;
+        z-index: 5;
+        width: 30vw;
+        height: 20vh;
+        align-self: center;
+        margin: 60% auto;
+        color: aliceblue;
+        font-family: "Fira Code", monospace;
+        filter: drop-shadow(#060b31 0.5rem 0.5rem 1rem);
+    }
+
+    .flickity-viewport{
+        height:100%;
+    }
+    
+    .flickity-page-dots {
+        bottom: 0px;
+      }
+      /* white circles */
+      .flickity-page-dots .dot {
+        width: 12px;
+        height: 12px;
+        opacity: 1;
+        background: transparent;
+        border: 2px solid #162CBC;
+      }
+      /* fill-in selected dot */
+      .flickity-page-dots .dot.is-selected {
+        background: #162CBC;
+      }
+    
+      #overlayContent{
+        position: fixed; 
+        width: 100vw;
+        top: 20vh;
+    
+        text-align: center;
+        align-self: center;
+    
+        display: flex;
+        flex-direction: column;
+        
+    
+        overflow: hidden;
+        z-index: 100;
+
+        font-family: "Fira Code", monospace;
+    }
+    
+    #overlayContent img{
+        width: 94%;
+        align-self: center;
+    }
+    
+    #overlay{
+        position: fixed; 
+        width: 100vw; 
+        height: 100vh; 
+        top: 0px; 
+        left: 0px; 
+        background-color: #000; 
+        opacity: 0.7;
+        filter: alpha(opacity = 70) !important;
+        display: none;
+        z-index: 100;
+    
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    
+        
+    }
+    
+    #caption{
+        display: none;
+        text-align: center;
+        z-index: 100;
+        font-size: 2vh;
+        font-family: 'Noto Sans', sans-serif;
+        color:aliceblue;
+    }
+    
+    
+    .BottomThird {
+        display: flex;
+
+        position: absolute;
+        top:1%;
+        right:0;
+
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 14%;
+        width: 37%;
+        padding: 0;
+    }
+    
+    .pageButton{
+       display: flex;
+       right: 3vw;
+        width: 12vw;
+        height: 7vh;
+
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        font-family: "Fira Code", monospace;
+        border: 3px solid #162CBC;
+        border-radius: 6px;
+        color: #162CBC;
+        text-decoration: none;
+        font-size: 4vh;
+        font-weight: 600;
+    }
+
+    .pageButton text{
+        align-self: center;
+    }
+
+    .pageTitle{
+        position: absolute;
+        font-size: 10vh;
+        height: 3vh;
+        left: 4vw;
+        top:0;
+        padding:0;
+        margin: 0;
+        font-family: "Trickster_Regular", sans-serif;
+        font-weight: 700;
+        color:#162CBC;
+    }
+}

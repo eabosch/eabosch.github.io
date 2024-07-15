@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <title>Interactive</title>
+    <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="w3CssContent.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Orelega+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="portfolioPage.css">
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="portfolioScript.js"></script>
+
+    </head>
+    <body>
+        <div id="overlay"></div>
+        <div id="overlayContent">
+            <img id="imgBig" src="" alt="" width="70%">
+            <p id="caption">hahaha</p>
+        </div>
+        <div id="gridContainer">
+            <div class="TopThird">
+                <a class="backButton" href="resume.html"><b>☜</b></a>
+                <div class="pageLogo"></div>
+                <div class="pageTitle">ᚐInteractiveᚐ</div>
+                <a class="nextButton" href="illustration.html"><b>☞</b></a>
+            </div>
+            <div class="MidThird">
+                <div class="galleryCards">
+                    <div class="carousel-cell"><div class="imageTitle">Metateq JCORE</div><img alt = "Metateq's JCORE" src="https://estherabosch.com/wp-content/uploads/2023/03/screenshot-2023-03-10-134643.png"></div>
+                    <div class="carousel-cell"><div class="imageTitle">Killer Moves</div><img alt = "Killer Moves" src="https://estherabosch.com/wp-content/uploads/2024/07/killermoves_gameplay.jpg"></div>
+                    <div class="carousel-cell"><div class="imageTitle">Personal Website</div><img alt = "Personal Website" src="https://estherabosch.com/wp-content/uploads/2023/02/website.jpg"></div>
+                    <div class="carousel-cell"><div class="imageTitle">Idyll</div><img alt = "Idyll" src="https://estherabosch.com/wp-content/uploads/2023/02/idyll.png"></div>
+                    <div class="carousel-cell"><div class="imageTitle">Folks</div><img alt = "Folks" src="https://estherabosch.com/wp-content/uploads/2023/02/folks.jpg"></div>
+                    <div class="carousel-cell"><div class="imageTitle">DreamLand App</div><img alt = "DreamLand App" src="https://estherabosch.com/wp-content/uploads/2023/03/dreamlapp.jpeg"></div>
+                    <div class="carousel-cell"><div class="imageTitle">God Generator</div><img alt = "God Generator" src="https://estherabosch.com/wp-content/uploads/2023/02/godgenerator-screenshot.png"></div>
+                </div>
+            </div>
+            <div class="BottomThird">
+                <a class="pageButton" href="index.html">Home</a>
+            </div>
+        </div>
+        <!--<script src="portfolioPageScript.js" defer></script>-->
+        
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        
+        <!--<script>
+            let scrollContainer = document.querySelector(".MidThird");
+            let prevButton = document.getElementById("prev-button");
+            let nextButton = document.getElementById("next-button");
+
+            scrollContainer.addEventListener("wheel",(evt)=>{
+                evt.preventDefault();
+                scrollContainer.scrollLeft += evt.deltaY;
+            });
+
+            nextButton.addEventListener("click",()=>{
+                scrollContainer.scrollLeft += 255;
+            });
+
+            prevButton.addEventListener("click",()=>{
+                scrollContainer.scrollLeft -= 255;
+            });
+        </script>-->
+    </body>
+</html>

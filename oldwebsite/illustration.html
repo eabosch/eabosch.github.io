@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+    <title>illustration</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3CssContent.css">
+<!--<video autoplay muted loop id="blueBGFullscreen"><source src="images/blueVHS.mp4"></video> -->
+<img id="blueBGFullscreen" src="images/bluebluegradient.png"></img>
+<img id="blueBGPortrait" src="images/bluebluegradientportrait.png"></img>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Orelega+One&display=swap" rel="stylesheet">
+<link href="fonts/SwedenSansRegular.css" rel="stylesheet">
+<link href="fonts/SwedenSansBold.css" rel="stylesheet">
+<link href="fonts/SwedenSansBook.css" rel="stylesheet">
+<link href="fonts/SwedenSansSemiBold.css" rel="stylesheet">
+
+<link rel="stylesheet" href="multimedia.css">
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-quarter img{cursor: pointer}
+</style>
+
+<body>
+    <div id="header">illustration.</div>
+    <div id="body-body">
+        <div id="hamburger-menu">
+            <span class="inactive"></span>
+            <span class="inactive"></span>
+            <span class="inactive"></span>
+            <span class="inactive"></span>
+        </div>
+        <div id="link-column" class="inactive">
+            <a href="index.html"><div class="linkItem" id="top-link"><span>top</span></div></a>
+            <div class="linkItem" id="about-me-link"><span>about me</a></span></div>
+            <div class="linkItem" id="multimedia-link"><span><a href='multimedia.html' id="multimedia-link-link">all media</a></span></div>
+            <div class="linkItem" id="design-link"><span><a href="design.html">design</a></span></div>
+            <div class="linkItem" style="background-color: aliceblue; color: dodgerblue;"id="illustration-link"><span><a href="illustration.html" style="font-size: 2.5vh;">-> illustration</a></span></div>
+            <div class="linkItem" id="writing-link"><span><a href="writing.html">interactive</a></span></div>
+        </div>
+        <div id="thumbnail-grid">
+            
+            <div class="thumbnail"><img class="thumbnailImage" width="220" height="315" src="images/portfolio-thumbs/drawtober.jpg"><img style="display: none;" src="images/fullscale-images/i-know-a-place.JPG" alt="I Know A Place - Drawtober 2022"><span class="caption" id="modalcaption" onclick="modalMode(this)" alt="bluh"><h1>I Know A Place</h1></span><span class="tagContainer"><span class="projectTag">illustration</span></span></div>
+            <div class="thumbnail"><img class="thumbnailImage" width="220" height="315" src="images/fullscale-images/beatrix-potter.JPG"><img style="display: none;" src="images/fullscale-images/beatrix-potter.JPG" alt="A Cozy Little Cottage - Drawtober 2022"><span class="caption" id="modalcaption" onclick="modalMode(this)" alt="bluh"><h1>A Cozy Little Cottage</h1></span><span class="tagContainer"><span class="projectTag">illustration</span></span></div>
+            <div class="thumbnail"><img class="thumbnailImage" width="220" height="315" src="images/portfolio-thumbs/cnut.JPG"><img style="display: none;" src="images/fullscale-images/cnut-and-the-tide.JPG" alt="Cnut and The Tide"><span class="caption" id="modalcaption" onclick="modalMode(this)" alt="bluh"><h1 style="background-color: dodgerblue;">Cnut and the Tide</h1></span><span class="tagContainer"><span class="projectTag">illustration</span></span></div>
+            <div class="thumbnail"><img class="thumbnailImage" width="220" height="315" src="images/portfolio-thumbs/captain-yajima.PNG"><img style="display: none;" src="images/fullscale-images/captain-yajima.PNG" alt="Captain Yajima"><span class="caption" onclick="modalMode(this)"><h1>Captain Yajima</h1><p></p></span><span class="tagContainer"><span class="projectTag">illustration</span></span></span></div>
+            <div class="thumbnail"><a href="https://www.behance.net/gallery/144874613/The-Laundromat"><img class="thumbnailImage" width="220" height="315" src="images/portfolio-thumbs/laundromat.png"><span class="caption"><h1>Laundromat</h1><p>A personal 3D illustration project.</p></span><span class="tagContainer"><span class="projectTag">illustration</span></a></div>
+            <div class="thumbnail"><img class="thumbnailImage" width="220" height="315" src="images/portfolio-thumbs/a familiar face.JPG"><img style="display: none;" src="images/fullscale-images/a familiar face-final.gif" alt="A familiar face"><span class="caption" id="modalcaption" onclick="modalMode(this)" alt="bluh"><h1>A Familiar Face</h1></span><span class="tagContainer"><span class="projectTag">illustration</span></span></div>
+            <div class="thumbnail"><img class="thumbnailImage" width="220" height="315" src="images/fullscale-images/homestuckPanel_lowRes.gif"><img style="display: none;" src="images/fullscale-images/homestuckPanel_lowRes.gif" alt="John: Get other cake."><span class="caption" id="modalcaption" onclick="modalMode(this)" alt="bluh"><h1 style="background-color: dodgerblue;">Homestuck panel redraw</h1></span><span class="tagContainer"><span class="projectTag">illustration</span></span></div>
+            <div class="thumbnail"><img class="thumbnailImage" width="220" height="315" src="images/fullscale-images/interstellar-expo.jpg"><img style="display: none;" src="images/fullscale-images/interstellar-expo.jpg" alt="Interstellar Expo 66"><span class="caption" id="modalcaption" onclick="modalMode(this)" alt="bluh"><h1 style="background-color: dodgerblue;">Interstellar Expo 66</h1></span><span class="tagContainer"><span class="projectTag">illustration</span></span></div>
+            <div class="thumbnail"><img class="thumbnailImage" width="220" height="315" src="images/fullscale-images/mods-and-rockers.PNG"><img style="display: none;" src="images/fullscale-images/mods-and-rockers.PNG" alt="Mods and Rockers"><span class="caption" id="modalcaption" onclick="modalMode(this)" alt="bluh"><h1>Mods and Rockers</h1></span><span class="tagContainer"><span class="projectTag">illustration</span></span></div>
+            <div class="thumbnail"><img class="thumbnailImage" width="220" height="315" src="images/portfolio-thumbs/umai.jfif"><img style="display: none;" src="images/portfolio-thumbs/umai.jfif" alt="A Positively Perfect Parfait"><span class="caption" id="modalcaption" onclick="modalMode(this)" alt="bluh"><h1>A Positively Perfect Parfait</h1></span><span class="tagContainer"><span class="projectTag">illustration</span></span></div>
+            <div class="thumbnail"><a href="https://www.behance.net/gallery/157273869/Space-Time-Witch"><img class="thumbnailImage" width="220" height="315" src="images/portfolio-thumbs/time-witch.PNG"><span class="caption"><h1>Time Witch</h1><p>A low-poly 3D character made for Sketchfab's Witch Contest.</p></span><span class="tagContainer"><span class="projectTag">illustration</span></span></a></div>
+        </div>
+    </div>
+    <!-- MODAL -->
+    <div id="modal01" class="modalDiv" style="padding-top:0" onclick="this.style.display='none'">
+        <span class="xButton w3-button w3-black w3-xlarge w3-display-topright">×</span>
+          <div class="zoombox w3-animate-zoom">
+            <img id="img01" class="modalImage">
+            <p id="alt-text-caption"></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var linkButton = this.id;
+        var thumbnails= document.getElementsByClassName("thumbnail");
+        const hamburger = document.querySelector("#hamburger-menu");
+        const navMenu = document.querySelector("#link-column");
+        const navMargin = document.querySelector(".sec_about");
+        const onClick = document.querySelectorAll(".linkItem");
+
+        document.querySelector('#hamburger-menu').addEventListener('click', 
+        () => { 
+            document.querySelector('#link-column').classList.toggle('active');
+            hamburger.classList.toggle("active");
+        }
+        );
+
+        
+
+        function delay (URL) {
+            setTimeout( function() { window.location = URL }, 700 );
+        }
+
+        function modalMode(element) {
+        var siblingImage = element.previousElementSibling;
+        document.getElementById("img01").src = siblingImage.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("alt-text-caption");
+        captionText.innerHTML = siblingImage.alt;
+        }
+        
+    </script>
+</body>
+</html>
