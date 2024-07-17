@@ -1,0 +1,603 @@
+@charset "utf-8";
+
+@font-face{
+    font-family: 'Trickster_Regular';
+    src:    url('fonts/Trickster-master/webfonts/Trickster-Regular.eot');
+    src:    url('fonts/Trickster-master/fontTrickster-Regular.eot?#iefix') format('embedded-opentype'),
+            url('fonts/Trickster-master/webfonts/Trickster-Regular.woff') format('woff'),
+            url('fonts/Trickster-master/webfonts/Trickster-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+html,body{
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    padding: 0;
+    margin:0;
+    /*background-color:#1f1457;*/
+    background-color: aliceblue;
+    overflow: hidden;
+    font-family: 'Noto Sans', sans-serif;
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* PORTRAIT */
+@media screen and (orientation: portrait){
+    #gridContainer {
+        display: block;
+        height: 100vh;
+        width: 100vw;
+        padding:0;
+        margin:0;
+        position: relative;
+    }
+
+    .TopThird {
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        display: block;
+        height: 15%;
+        width: 100%;
+        margin: 0 auto 0 auto;
+        z-index: 50;
+        
+    }
+    #midThird{
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        display: block;
+        height: 85%;
+        width: 100%;
+        margin: 0 auto 0 auto;
+        z-index: 1;
+        bottom: 0;
+    }
+    .BottomThird{
+        position: absolute;
+        z-index: 1000;
+        width: 100vw;
+        height: 5vh;
+        margin: 3% 0;
+        justify-content: center;
+        align-items: center;
+        bottom: 0;
+        text-align: center;
+        z-index: 1000;
+    }
+    .homeButton{
+        position: relative;
+        border: 2px solid #162CBC;
+        color:#162CBC;
+        padding: 2% 5%;
+        background-color: aliceblue;
+        border-radius: 5px;
+        text-decoration: none;
+        
+        font-family: "Fira Code", monospace;
+    }
+    .backButton{
+        
+       /*color: #d69aea;*/
+       color:#162CBC;
+        font-family: "Noto Sans", sans-serif;
+        font-weight: 200;
+        text-decoration: none;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        display: inline-block;
+
+    }
+
+    .nextButton{
+        
+        /*color: #d69aea;*/
+        color:#162CBC;
+
+        font-family: "Noto Sans", sans-serif;
+        font-weight: 200;
+        text-decoration: none;
+        padding: 0;
+        margin: 0;
+        
+        position: relative;
+        display: inline-block;
+
+    }
+
+    .pageTitle{
+        top:0;
+        font-family: "Trickster_Regular", sans-serif;
+        width: 100%;
+        font-weight: 700;
+        color:#162CBC;
+
+        font-size:5vh;
+        
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        
+        margin: 5% auto;
+    }
+
+    .pixel-art-container{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        top: 0;
+        margin-top: 0;
+        padding-top: 0;
+        align-items: top;
+        overflow: hidden;
+
+
+        z-index: 1;
+        
+        pointer-events: none;
+    }
+
+    .pixel-art-container svg {
+        position: absolute;
+        margin: 0 auto;
+    
+        height:100%;
+        width: 100%;
+        pointer-events: none;
+    }
+
+    #pixelArt-paper
+    {
+        z-index: 0;
+    }
+    #pixelArt-paperCorner
+    {
+        z-index: 15;
+    }
+    #pixelArt-BorderRight
+    {
+        z-index: 11;
+    }
+    
+    
+    .pageButton{
+        display: none;
+    }
+
+    #resumeContents{
+        height: 100%;
+        width: 70%;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        overflow-y: scroll;
+        z-index: 5;
+        color: #162CBC;
+        font-family: "Fira Code", monospace;
+
+        margin: 0 15% 0 15%;
+        padding: 5% 0 20% 0;
+
+        z-index: 1;
+        
+    }
+
+    #resume-download{
+        border: 2px solid #162CBC;
+        border-radius: 5px;
+        padding: 1%;
+        width: 75%;
+        text-align: center;
+        align-self: center;
+        margin: 0 auto;
+    }
+
+    #downloadLink{
+        text-decoration: none;
+    }
+
+    #resumeContents::-webkit-scrollbar{
+        display: none;
+    }
+
+    .header{
+        margin: 4% 0 0 0;
+    }
+    .divider{
+        background-color: #162CBC;
+        width: 100%;
+        height: 0.25vh;
+        margin-bottom: 5%;
+    }
+    h2{
+        font-size: 3vh;
+        margin: 5% 0 6% 0;
+
+        padding-top: 2%;
+    }
+    li{
+        margin: 2% 5% 0 5%;
+        font-size: 1.5vh;
+    }
+    .li-container{
+       margin-left: 2%;
+    }
+    li::marker{
+        content:'✿';
+    }
+    h3{
+        font-size: 2.25vh;
+        margin: 3.5vh 0 1vh 0;
+    }
+    p{
+        font-size: 1.5vh;
+        margin-bottom: 1vh;
+    }
+    .employer{
+        font-size: 1.5vh;
+    }
+    #education-body span{
+        font-size: 1.5vh;
+    }
+}
+@media screen and (orientation: portrait) and (min-width:300px){
+    .TopThird{
+        height: 15%;
+    }
+    #midThird{
+        height:85%;
+        margin-top: 0;
+    }
+    #resumeContents{
+        margin: 0 20% 0 20%;
+        width: 60%;
+    }
+}
+@media screen and (orientation: portrait) and (max-width:344px) and (min-height: 881px){
+    .pixel-art-container{
+        margin-top: -35%;
+        height: 118%;
+    }
+    .pixel-art-container svg {
+        margin: 0 2.5% 0 2.5%;
+        width: 95%;
+        pointer-events: none;
+    }
+}
+@media screen and (orientation: portrait) and (min-width:390px){
+    .TopThird{
+        height: 15%;
+    }
+    #midThird{
+        height:85%;
+        margin-top: 0;
+    }
+    #resumeContents{
+        margin: 0 15% 0 15%;
+        width: 70%;
+    }
+}
+@media screen and (orientation: portrait) and (min-width:540px){
+    #resumeContents{
+        margin: 0 25% 0 25%;
+        width: 50%;
+    }
+}
+
+/*LANDSCAPE*/
+@media screen and (orientation: landscape){
+    #gridContainer {
+        display: block;
+        height: 100vh;
+        width: 100vw;
+        padding:0;
+        margin:0;
+        position: relative;
+    }
+
+    .TopThird {
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 50%;
+        margin: 0 auto 0 auto;
+        z-index: 50;
+        
+    }
+    #midThird{
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 50%;
+        margin: 0 auto;
+        z-index: 1;
+        bottom: 0;
+        right: 0;
+    }
+    .BottomThird{
+        position: absolute;
+        z-index: 1000;
+        width: 50%;
+        height: 100%;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        z-index: 1000;
+        pointer-events: none;
+    }
+    .homeButton{
+        position: absolute;
+        left:0;
+        border: 2px solid #162CBC;
+        color:#162CBC;
+        padding: 1% 3% 1% 3%;
+        margin: 0%;
+        bottom: 5%;
+        left: 5%;
+        background-color: aliceblue;
+        border-radius: 5px;
+        text-decoration: none;
+        
+        font-family: "Fira Code", monospace;
+        font-size: 3vh;
+        pointer-events: all;
+    }
+    .backButton{
+        
+       /*color: #d69aea;*/
+       color:#162CBC;
+        font-family: "Noto Sans", sans-serif;
+        font-weight: 200;
+        text-decoration: none;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        display: inline-block;
+
+    }
+
+    .nextButton{
+        
+        /*color: #d69aea;*/
+        color:#162CBC;
+
+        font-family: "Noto Sans", sans-serif;
+        font-weight: 200;
+        text-decoration: none;
+        padding: 0;
+        margin: 0;
+        
+        position: relative;
+        display: inline-block;
+
+    }
+
+    .pageTitle{
+        top:0;
+        font-family: "Trickster_Regular", sans-serif;
+        width: 50%;
+        font-weight: 700;
+        color:#162CBC;
+
+        font-size:4.5vh;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        
+        margin: 46vh 25%;
+    }
+
+    .pixel-art-container{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        
+        bottom: -30vh;
+        align-items: top;
+        overflow: hidden;
+        scale: 1.5;
+
+        z-index: 1;
+        
+        pointer-events: none;
+    }
+
+    .pixel-art-container svg {
+        position: absolute;
+        margin: 0 auto;
+    
+        height:100%;
+        width: 100%;
+        
+        pointer-events: none;
+    }
+
+    #pixelArt-paper
+    {
+        z-index: 0;
+    }
+    #pixelArt-paperCorner
+    {
+        z-index: 15;
+    }
+    #pixelArt-BorderRight
+    {
+        z-index: 11;
+    }
+    
+    
+    .pageButton{
+        display: none;
+    }
+
+    #resumeContents{
+        height: 94.5vh;
+        width: 70%;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        overflow-y: scroll;
+        z-index: 5;
+        color: #162CBC;
+        font-family: "Fira Code", monospace;
+
+        margin: 0 15% 0 15%;
+        padding: 5% 0 5% 0;
+
+        z-index: 1;
+        
+    }
+
+    #resume-download{
+        border: 2px solid #162CBC;
+        border-radius: 5px;
+        padding: 1%;
+        width: 75%;
+        text-align: center;
+        align-self: center;
+        margin: 0 auto;
+    }
+
+    #downloadLink{
+        text-decoration: none;
+    }
+
+    #resumeContents::-webkit-scrollbar{
+        display: none;
+    }
+
+    .header{
+        margin: 4% 0 0 0;
+    }
+    .divider{
+        background-color: #162CBC;
+        width: 100%;
+        height: 0.25vh;
+        margin-bottom: 5%;
+    }
+    h2{
+        font-size: 3vh;
+        margin: 5% 0 6% 0;
+
+        padding-top: 2%;
+    }
+    li{
+        margin: 2% 5% 0 5%;
+        font-size: 1.5vh;
+    }
+    .li-container{
+       margin-left: 2%;
+    }
+    li::marker{
+        content:'✿';
+    }
+    h3{
+        font-size: 2.25vh;
+        margin: 3.5vh 0 1vh 0;
+    }
+    p{
+        font-size: 1.5vh;
+        margin-bottom: 1vh;
+    }
+    .employer{
+        font-size: 1.5vh;
+    }
+    #education-body span{
+        font-size: 1.5vh;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 1400px){
+    .pageTitle{
+        font-size:5vh;
+    }
+    .homeButton{
+        width: 20%;
+        height: 6%;
+        top: 7%;
+        left: 7%;
+    }
+    .pixel-art-container{ 
+        bottom: -15vh;
+        scale: 1.2;
+    }
+}
+@media screen and (orientation: landscape) and (max-width: 1367px){
+    
+    .homeButton{
+        top: 7%;
+        left: 7%;
+    }
+}
+@media screen and (orientation: landscape) and (max-width: 915px){
+    .pageTitle{
+        width: 50%;
+
+        font-size:7vh;
+    }
+    .homeButton{
+        top: 7%;
+        left: 7%;
+    }
+    #resumeContents{
+        width: 60%;
+        margin: 0 20% 0 20%;
+    }
+    h2{
+        font-size: 4vh;
+    }
+    li{
+        font-size: 2.5vh;
+    }
+    h3{
+        font-size: 4.25vh;
+    }
+    p{
+        font-size: 2.5vh;
+    }
+    .employer{
+        font-size: 2.5vh;
+    }
+    #education-body span{
+        font-size: 2.5vh;
+    }
+}
+@media screen and (orientation: landscape) and (max-width: 915px) and (max-height:345px){
+    
+    .pixel-art-container{ 
+        bottom: -42vh;
+        scale: 1.75;
+    }
+}
+@media screen and (orientation: landscape) and (max-width: 721px){
+    .pageTitle{
+        font-size:5vh;
+    }
+    .homeButton{
+        top: 7%;
+        left: 7%;
+    }
+    .pixel-art-container{ 
+        bottom: -15vh;
+        scale: 1.2;
+    }
+}

@@ -93,6 +93,11 @@ html,body{
         align-self: center;
     }
 }
+@media screen and (orientation: portrait) and (min-width: 820px){
+    .pageLogo{
+        width:25vw;
+    }
+}
 
 @media screen and (orientation: landscape){
     #gridContainer {
@@ -198,5 +203,39 @@ html,body{
     }
     .socialIcon{
         margin: 2% 5% 2% 5%;
+    }
+}
+@media screen and (orientation: landscape) and (min-width: 1000px) {
+    .pageLogo{
+        width:80%;
+        margin-top: 25vh;
+    }
+    .BottomThird{
+        height: 43%;
+    }
+}
+@media screen and (orientation: landscape) and (min-width: 1200px) {
+    .pageLogo{
+        margin-top: 20vh;
+    }
+}
+@media screen and (orientation: landscape) and (min-width: 1450px) {
+    .pageLogo{
+        margin-top: 15vh;
+    }
+}
+@media screen and (orientation: landscape) and (min-width: 1610px) {
+    .pageLogo{
+        width:60%;
+    }
+}
+@media screen and (orientation: landscape) and (min-width: 1800px) {
+    .pageLogo{
+        width:50%;
+    }
+}
+@media screen and (orientation: landscape) and (min-width: 1900px) {
+    .pageLogo{
+        width:45%;
     }
 }
