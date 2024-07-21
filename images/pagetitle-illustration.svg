@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 985.39 184.01">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        fill: #162cbc;
+        font-family: Trickster-Regular, Trickster;
+        font-size: 200px;
+      }
+    </style>
+  </defs>
+  <text class="cls-6" transform="translate(0 176)"><tspan x="0" y="0">I</tspan><tspan class="cls-3" x="58.4" y="0">l</tspan><tspan class="cls-5" x="104.6" y="0">l</tspan><tspan class="cls-1" x="151.4" y="0">u</tspan><tspan class="cls-4" x="258.39" y="0">s</tspan><tspan x="349.99" y="0">trati</tspan><tspan class="cls-2" x="768.39" y="0">o</tspan><tspan x="876.79" y="0">n</tspan></text>
+</svg>
