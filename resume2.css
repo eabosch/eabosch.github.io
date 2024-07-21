@@ -68,7 +68,7 @@ html,body{
         z-index: 1000;
         width: 100vw;
         height: 12vh;
-        margin: 3% 0;
+        margin: 14% 0;
         justify-content: center;
         align-items: center;
         bottom: 0;
@@ -82,6 +82,7 @@ html,body{
         padding: 2% 5%;
         background-color: aliceblue;
         border-radius: 5px;
+        filter: drop-shadow(0px 5px #162CBC);
         text-decoration: none;
         
         font-family: "Fira Code", monospace;
@@ -189,7 +190,7 @@ html,body{
         font-family: "Fira Code", monospace;
 
         margin: 0 15% 0 15%;
-        padding: 5% 0 30% 0;
+        padding: 5% 0 50% 0;
 
         z-index: 1;
         
@@ -263,7 +264,7 @@ html,body{
     }
     #resumeContents{
         margin: 0 20% 0 20%;
-        padding: 5% 0 35% 0;
+        padding: 5% 0 45% 0;
         width: 60%;
     }
 }
@@ -278,7 +279,7 @@ html,body{
         pointer-events: none;
     }
     #resumeContents{
-        padding: 5% 0 45% 0;
+        padding: 5% 0 55% 0;
     }
 }
 @media screen and (orientation: portrait) and (min-width:390px){
@@ -292,7 +293,7 @@ html,body{
     #resumeContents{
         margin: 0 15% 0 15%;
         width: 70%;
-        padding: 5% 0 40% 0;
+        padding: 5% 0 45% 0;
     }
 }
 @media screen and (orientation: portrait) and (min-width:540px){
@@ -300,6 +301,9 @@ html,body{
         margin: 0 25% 0 25%;
         padding: 5% 0 25% 0;
         width: 50%;
+    }
+    .BottomThird{
+        margin: 4% 0;
     }
 }
 
